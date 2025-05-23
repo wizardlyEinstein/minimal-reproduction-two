@@ -1,0 +1,550 @@
+[34mDEBUG[39m: Using RE2 regex engine
+[34mDEBUG[39m: Parsing configs
+[34mDEBUG[39m: No config file found on disk - skipping
+[34mDEBUG[39m: File config
+       "config": {}
+[34mDEBUG[39m: CLI config
+       "config": {"repositories": ["wizardlyEinstein/minimal-reproduction"], "prHourlyLimit": 0}
+[34mDEBUG[39m: Env config
+       "config": {"hostRules": [], "token": "***********"}
+[34mDEBUG[39m: Resolved global extends
+       "config": undefined
+[34mDEBUG[39m: Combined config
+       "config": {
+         "hostRules": [],
+         "token": "***********",
+         "repositories": ["wizardlyEinstein/minimal-reproduction"],
+         "prHourlyLimit": 0
+       }
+[34mDEBUG[39m: Enabling forkProcessing while in non-autodiscover mode
+[34mDEBUG[39m: Enabling onboardingNoDeps while in non-autodiscover mode
+[34mDEBUG[39m: Found valid git version: 2.49.0
+[34mDEBUG[39m: Setting global hostRules
+[34mDEBUG[39m: Using default github endpoint: https://api.github.com/
+[34mDEBUG[39m: hostRules: authentication already set for api.github.com
+[34mDEBUG[39m: Using queue: host=api.github.com, concurrency=16
+[34mDEBUG[39m: GET https://api.github.com/user/emails = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=403 retryCount=0, duration=192)
+[34mDEBUG[39m: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+[34mDEBUG[39m: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {
+           "username": "LelandSindt",
+           "name": "Leland Sindt",
+           "id": 939903
+         },
+         "userEmail": null
+       },
+       "renovateUsername": "LelandSindt"
+[34mDEBUG[39m: Adding token authentication for api.github.com (hostType=github) to hostRules
+[34mDEBUG[39m: Using baseDir: /tmp/renovate
+[34mDEBUG[39m: Using cacheDir: /tmp/renovate/cache
+[34mDEBUG[39m: Using containerbaseDir: /tmp/renovate/cache/containerbase
+[34mDEBUG[39m: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+[34mDEBUG[39m: Commits limit = null
+[34mDEBUG[39m: Setting global hostRules
+[34mDEBUG[39m: Adding token authentication for api.github.com (hostType=github) to hostRules
+[34mDEBUG[39m: validatePresets()
+[34mDEBUG[39m: Reinitializing hostRules for repo
+[34mDEBUG[39m: Clearing hostRules
+[34mDEBUG[39m: Adding token authentication for api.github.com (hostType=github) to hostRules
+[32m INFO[39m: Repository started[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "renovateVersion": "40.11.19"
+[34mDEBUG[39m: Using localDir: /tmp/renovate/repos/github/wizardlyEinstein/minimal-reproduction[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: PackageFiles.clear() - Package files deleted[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: initRepo("wizardlyEinstein/minimal-reproduction")[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: hostRules: authentication already set for api.github.com[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using queue: host=api.github.com, concurrency=16[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: wizardlyEinstein/minimal-reproduction default branch = main[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using personal access token for git init[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Resetting npmrc[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Resetting npmrc[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: checkOnboarding()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: isOnboarded()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: findPr(renovate/configure, Configure Renovate, !open)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://api.github.com/repos/wizardlyEinstein/minimal-reproduction/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"30f9891a713e7dc861e44df9211220a5ef259302e6a18baac4e6230ef4ecdec9", lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getPrList success[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "pullsTotal": 1,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+[34mDEBUG[39m: findPr(renovate/configure, chore: Configure Renovate, !open)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: findFile(renovate.json)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Initializing git repository into /tmp/renovate/repos/github/wizardlyEinstein/minimal-reproduction[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Performing blobless clone[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: git clone completed[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "durationMs": 1215
+[34mDEBUG[39m: latest repository commit[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "latestCommit": {
+         "hash": "90c728a3ee329b7fc88623cc3359be568e899372",
+         "date": "2025-05-22T20:06:55-05:00",
+         "message": "minimal",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Leland Sindt",
+         "author_email": "leland@sway.org"
+       }
+[34mDEBUG[39m: Config file exists, fileName: renovate.json[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Repo is onboarded[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Found renovate.json config file[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Repository config[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "fileName": "renovate.json",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "groupName": "all dependencies",
+         "groupSlug": "all",
+         "lockFileMaintenance": {"enabled": false},
+         "packageRules": [
+           {
+             "groupName": "all dependencies",
+             "groupSlug": "all",
+             "matchPackageNames": ["*"]
+           }
+         ],
+         "separateMajorMinor": false
+       }
+[34mDEBUG[39m: migrateAndValidate()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: No config migration necessary[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Found repo ignorePaths[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+[34mDEBUG[39m: No vulnerability alerts enabled for repo[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: No vulnerability alerts found[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: No baseBranches[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: extract()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Setting current branch to main[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: latest commit[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "branchName": "main",
+       "latestCommitDate": "2025-05-22T20:06:55-05:00"
+[34mDEBUG[39m: Using file pattern: /(^|/)tasks/[^/]+\.ya?ml$/ for manager ansible[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$/ for manager ansible-galaxy[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.tool-versions$/ for manager asdf[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/).azuredevops/.+\.ya?ml$/ for manager azure-pipelines[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /azure.*pipelines?.*\.ya?ml$/ for manager azure-pipelines[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)batect(-bundle)?\.ya?ml$/ for manager batect[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)batect$/ for manager batect-wrapper[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)WORKSPACE(|\.bazel|\.bzlmod)$/ for manager bazel[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.WORKSPACE\.bazel$/ for manager bazel[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.bzl$/ for manager bazel[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/|\.)MODULE\.bazel$/ for manager bazel-module[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.bazelversion$/ for manager bazelisk[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.bicep$/ for manager bicep[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.?bitbucket-pipelines\.ya?ml$/ for manager bitbucket-pipelines[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)bitrise\.ya?ml$/ for manager bitrise[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /buildkite\.ya?ml/ for manager buildkite[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.buildkite/.+\.ya?ml$/ for manager buildkite[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)project\.toml$/ for manager buildpacks[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)bun\.lockb?$/ for manager bun[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)package\.json$/ for manager bun[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.bun-version$/ for manager bun-version[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Gemfile$/ for manager bundler[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.cake$/ for manager cake[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Cargo\.toml$/ for manager cargo[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.circleci/.+\.ya?ml$/ for manager circleci[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)cloudbuild\.ya?ml/ for manager cloudbuild[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Podfile$/ for manager cocoapods[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)([\w-]*)composer\.json$/ for manager composer[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)conanfile\.(txt|py)$/ for manager conan[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.copier-answers(\..+)?\.ya?ml/ for manager copier[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)cpanfile$/ for manager cpanfile[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)(?:deps|bb)\.edn$/ for manager deps-edn[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)devbox\.json$/ for manager devbox[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^.devcontainer/devcontainer.json$/ for manager devcontainer[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^.devcontainer.json$/ for manager devcontainer[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)(?:docker-)?compose[^/]*\.ya?ml$/ for manager docker-compose[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/|\.)([Dd]ocker|[Cc]ontainer)file$/ for manager dockerfile[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/ for manager dockerfile[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.drone\.yml$/ for manager droneci[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)fleet\.ya?ml/ for manager fleet[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(?:^|/)gotk-components\.ya?ml$/ for manager flux[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.fvm/fvm_config\.json$/ for manager fvm[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.fvmrc$/ for manager fvm[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.gitmodules$/ for manager git-submodules[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$/ for manager github-actions[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)action\.ya?ml$/ for manager github-actions[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci-include[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)gleam.toml$/ for manager gleam[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)go\.mod$/ for manager gomod[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.gradle(\.kts)?$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)gradle\.properties$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)gradle/.+\.toml$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)buildSrc/.+\.kt$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.versions\.toml$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)versions.props$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)versions.lock$/ for manager gradle[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)gradle/wrapper/gradle-wrapper\.properties$/ for manager gradle-wrapper[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.cabal$/ for manager haskell-cabal[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)requirements\.ya?ml$/ for manager helm-requirements[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)values\.ya?ml$/ for manager helm-values[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)helmfile\.ya?ml(?:\.gotmpl)?$/ for manager helmfile[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Chart\.ya?ml$/ for manager helmv3[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)bin/hermit$/ for manager hermit[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^Formula/[^/]+[.]rb$/ for manager homebrew[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.html?$/ for manager html[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)plugins\.(txt|ya?ml)$/ for manager jenkins[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)jsonnetfile\.json$/ for manager jsonnet-bundler[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^.+\.main\.kts$/ for manager kotlin-script[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)kustomization\.ya?ml$/ for manager kustomize[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)project\.clj$/ for manager leiningen[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/|\.)pom\.xml$/ for manager maven[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^(((\.mvn)|(\.m2))/)?settings\.xml$/ for manager maven[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.mvn/extensions\.xml$/ for manager maven[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|\/).mvn/wrapper/maven-wrapper.properties$/ for manager maven-wrapper[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)package\.js$/ for manager meteor[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Mintfile$/ for manager mint[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.?mise\.toml$/ for manager mise[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.?mise/config\.toml$/ for manager mise[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)mix\.exs$/ for manager mix[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)flake\.nix$/ for manager nix[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.node-version$/ for manager nodenv[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)package\.json$/ for manager npm[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)pnpm-workspace\.yaml$/ for manager npm[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.(?:cs|fs|vb)proj$/ for manager nuget[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.(?:props|targets)$/ for manager nuget[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)dotnet-tools\.json$/ for manager nuget[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)global\.json$/ for manager nuget[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.nvmrc$/ for manager nvm[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)src/main/features/.+\.json$/ for manager osgi[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)pyproject\.toml$/ for manager pep621[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)[\w-]*requirements([-.]\w+)?\.(txt|pip)$/ for manager pip_requirements[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)setup\.py$/ for manager pip_setup[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Pipfile$/ for manager pipenv[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)pyproject\.toml$/ for manager pixi[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)pixi\.toml$/ for manager pixi[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)pyproject\.toml$/ for manager poetry[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.pre-commit-config\.ya?ml$/ for manager pre-commit[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)pubspec\.ya?ml$/ for manager pub[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Puppetfile$/ for manager puppet[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.python-version$/ for manager pyenv[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: renovate.json for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: renovate.json5 for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .github/renovate.json for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .github/renovate.json5 for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .gitlab/renovate.json for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .gitlab/renovate.json5 for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .renovaterc for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .renovaterc.json for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: .renovaterc.json5 for manager renovate-config-presets[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.ruby-version$/ for manager ruby-version[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)runtime.txt$/ for manager runtime-version[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.sbt$/ for manager sbt[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /project/[^/]*\.scala$/ for manager sbt[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /project/build\.properties$/ for manager sbt[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)repositories$/ for manager sbt[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.scalafmt.conf$/ for manager scalafmt[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)setup\.cfg$/ for manager setup-cfg[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)Package\.swift/ for manager swift[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.tf$/ for manager terraform[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.terraform-version$/ for manager terraform-version[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)terragrunt\.hcl$/ for manager terragrunt[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.terragrunt-version$/ for manager terragrunt-version[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /\.tflint\.hcl$/ for manager tflint-plugin[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^\.travis\.ya?ml$/ for manager travis[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)\.vela\.ya?ml$/ for manager velaci[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /(^|/)vendir\.yml$/ for manager vendir[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Using file pattern: /^\.woodpecker(?:/[^/]+)?\.ya?ml$/ for manager woodpecker[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Matched 1 file(s) for manager kustomize: kustomization.yaml[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Matched 1 file(s) for manager renovate-config-presets: renovate.json[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: manager extract durations (ms)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "managers": {"kustomize": 12, "renovate-config-presets": 12}
+[34mDEBUG[39m: Found kustomize package files[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Found 1 package file(s)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[32m INFO[39m: Dependency extraction complete[90m (repository=wizardlyEinstein/minimal-reproduction, baseBranch=main)[39m
+       "stats": {
+         "managers": {"kustomize": {"fileCount": 1, "depCount": 2}},
+         "total": {"fileCount": 1, "depCount": 2}
+       }
+[34mDEBUG[39m: Using queue: host=ghcr.io, concurrency=16[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://ghcr.io/token?scope=repository%3Aimmich-app%2Fimmich-server%3Apull&service=ghcr.io (etag=undefined, lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://ghcr.io/token?scope=repository%3Aimmich-app%2Fimmich-machine-learning%3Apull&service=ghcr.io (etag=undefined, lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getLabels(https://ghcr.io, immich-app/immich-server, v1.133.0)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getManifestResponse(https://ghcr.io, immich-app/immich-server, v1.133.0, getText)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://ghcr.io/v2/immich-app/immich-server/manifests/v1.133.0 (etag="sha256:4d667c5fd6ffac0395c429fc8a335c607272587643f29fb2ddd9bfe16f1f874e", lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getManifestResponse(https://ghcr.io, immich-app/immich-server, sha256:204a2a3e7eba30a4f1480d61de2fd2dd30ca4883195bee7308d34fc7a713694c, getText)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://ghcr.io/v2/immich-app/immich-server/manifests/sha256:204a2a3e7eba30a4f1480d61de2fd2dd30ca4883195bee7308d34fc7a713694c (etag="sha256:204a2a3e7eba30a4f1480d61de2fd2dd30ca4883195bee7308d34fc7a713694c", lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: found labels in manifest[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "labels": {
+         "org.opencontainers.image.created": "2025-05-21T20:18:15.289Z",
+         "org.opencontainers.image.description": "High performance self-hosted photo and video management solution.",
+         "org.opencontainers.image.licenses": "AGPL-3.0",
+         "org.opencontainers.image.revision": "55adc136c8d3f81f63e904246d29e83f224ba304",
+         "org.opencontainers.image.source": "https://github.com/immich-app/immich",
+         "org.opencontainers.image.title": "immich",
+         "org.opencontainers.image.url": "https://github.com/immich-app/immich",
+         "org.opencontainers.image.version": "v1.133.0"
+       }
+[34mDEBUG[39m: getLabels(https://ghcr.io, immich-app/immich-machine-learning, v1.131.2)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getManifestResponse(https://ghcr.io, immich-app/immich-machine-learning, v1.131.2, getText)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://ghcr.io/v2/immich-app/immich-machine-learning/manifests/v1.131.2 (etag="sha256:29836cf73146057ac388546021fff3e00c923e22a28587cceb5108a5e537987d", lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getManifestResponse(https://ghcr.io, immich-app/immich-machine-learning, sha256:1e0244b44273448dbccc4d7b737e566cf9478fb1556d097ff4701daa9e7c2d16, getText)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://ghcr.io/v2/immich-app/immich-machine-learning/manifests/sha256:1e0244b44273448dbccc4d7b737e566cf9478fb1556d097ff4701daa9e7c2d16 (etag="sha256:1e0244b44273448dbccc4d7b737e566cf9478fb1556d097ff4701daa9e7c2d16", lastModified=undefined)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: found labels in manifest[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "labels": {}
+[34mDEBUG[39m: PackageFiles.add() - Package file saved for base branch[90m (repository=wizardlyEinstein/minimal-reproduction, baseBranch=main)[39m
+[34mDEBUG[39m: Package releases lookups complete[90m (repository=wizardlyEinstein/minimal-reproduction, baseBranch=main)[39m
+[34mDEBUG[39m: No currentVersionTimestamp for ghcr.io/immich-app/immich-server[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Repository libYears[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "libYears": {"managers": {"kustomize": 0}, "total": 0},
+       "dependencyStatus": {"outdated": 1, "total": 2}
+[34mDEBUG[39m: branchifyUpgrades[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: detectSemanticCommits()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getCommitMessages[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: semanticCommits: detected "unknown"[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: semanticCommits: disabled[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: 1 flattened updates found: ghcr.io/immich-app/immich-server[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Returning 1 branch(es)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: config.repoIsOnboarded=true[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: packageFiles with updates[90m (repository=wizardlyEinstein/minimal-reproduction, baseBranch=main)[39m
+       "config": {
+         "kustomize": [
+           {
+             "deps": [
+               {
+                 "depName": "ghcr.io/immich-app/immich-machine-learning",
+                 "packageName": "ghcr.io/immich-app/immich-machine-learning",
+                 "currentValue": "v1.131.2",
+                 "datasource": "docker",
+                 "replaceString": "v1.131.2",
+                 "autoReplaceStringTemplate": "{{newValue}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "depType": "Kustomization",
+                 "updates": [],
+                 "versioning": "docker",
+                 "warnings": [],
+                 "registryUrl": "https://ghcr.io",
+                 "lookupName": "immich-app/immich-machine-learning",
+                 "currentVersion": "v1.131.2",
+                 "fixedVersion": "v1.131.2"
+               },
+               {
+                 "depName": "ghcr.io/immich-app/immich-server",
+                 "packageName": "ghcr.io/immich-app/immich-server",
+                 "currentValue": "v1.132.3",
+                 "datasource": "docker",
+                 "replaceString": "v1.132.3",
+                 "autoReplaceStringTemplate": "{{newValue}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "depType": "Kustomization",
+                 "updates": [
+                   {
+                     "bucket": "latest",
+                     "newVersion": "v1.133.0",
+                     "newValue": "v1.133.0",
+                     "newMajor": 1,
+                     "newMinor": 133,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": false,
+                     "branchName": "renovate/all"
+                   }
+                 ],
+                 "versioning": "docker",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/immich-app/immich",
+                 "registryUrl": "https://ghcr.io",
+                 "lookupName": "immich-app/immich-server",
+                 "currentVersion": "v1.132.3",
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1.132.3"
+               }
+             ],
+             "packageFile": "kustomization.yaml"
+           }
+         ]
+       }
+[34mDEBUG[39m: detectSemanticCommits()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: semanticCommits: returning "disabled" from cache[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: processRepo()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Processing 1 branch: renovate/all[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: getBranchPr(renovate/all)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: findPr(renovate/all, undefined, open)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Found PR #1[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: 1 PRs are currently open[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: ConcurrentPRs count = 1[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: 1 already existing branches found.[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Branches count = 1[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Calculating PRs created so far in this hour currentHourStart=2025-05-23T01:00:00.000Z[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: 1 PRs have been created so far in this hour.[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: HourlyPRs count = 1[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: syncBranchState()[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: syncBranchState(): Branch cache not found, creating minimal branchState[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: getBranchPr(renovate/all)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: findPr(renovate/all, undefined, open)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Found PR #1[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: branchExists=true[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: dependencyDashboardCheck=undefined[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: PR rebase requested=false[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Open PR Count: 1, Existing Branch Count: 1, Hourly PR Count: 1[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Checking if PR has been edited[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: branch.isModified(): using git to calculate[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: branch.isModified() = false[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Found existing branch PR[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Checking schedule(schedule=at any time, tz=null, now=2025-05-23T01:38:27.490Z)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: No schedule defined[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: GET https://api.github.com/repos/wizardlyEinstein/minimal-reproduction/branches/main/protection = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=352)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: No branch protection found for main[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Branch already exists[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Skipping behind base branch check due to rebaseWhen=conflicted[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: isBranchConflicted(main, renovate/all)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: branch.isConflicted(): using git to calculate[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Setting git author name: Renovate Bot[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Setting git author email: renovate@whitesourcesoftware.com[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: branch.isConflicted(): false[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Branch does not need rebasing[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Using reuseExistingBranch: true[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Setting current branch to main[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: latest commit[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+       "branchName": "main",
+       "latestCommitDate": "2025-05-22T20:06:55-05:00"
+[34mDEBUG[39m: manager.getUpdatedPackageFiles() reuseExistingBranch=true[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Branch dep ghcr.io/immich-app/immich-server in kustomization.yaml is already updated[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: No content changed[90m (repository=wizardlyEinstein/minimal-reproduction, packageFile=kustomization.yaml, branch=renovate/all)[39m
+       "depName": "ghcr.io/immich-app/immich-server"
+[34mDEBUG[39m: No package files need updating[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: No updated lock files in branch[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: No changes to package files, skipping post-upgrade tasks[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: No files to commit[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Setting current branch to main[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: latest commit[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+       "branchName": "main",
+       "latestCommitDate": "2025-05-22T20:06:55-05:00"
+[34mDEBUG[39m: Checking if we can automerge branch[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: mergeStatus=no automerge[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Ensuring PR[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: There are 0 errors and 0 warnings[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: getBranchPr(renovate/all)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: findPr(renovate/all, undefined, open)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Found PR #1[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Found existing PR[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Fetching changelog: https://github.com/immich-app/immich (v1.132.3 -> v1.133.0)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: http cache: saving https://api.github.com/repos/immich-app/immich (etag=W/"5e4c41646d71da04c384714ade2853a6a716ab5446814875ca94daea814dd47b", lastModified=Fri, 23 May 2025 01:36:54 GMT)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: http cache: saving https://api.github.com/repos/immich-app/immich/git/trees/main (etag=W/"2f68eb6dde8ca4e1b7905b0af5adf8b725c7793911e52b9d4d3282e2d51496e1", lastModified=Fri, 23 May 2025 01:36:54 GMT)[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Processing existing PR[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: setPrCache()[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: Pull Request #1 does not need updating[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: PR is not configured for automerge[90m (repository=wizardlyEinstein/minimal-reproduction, branch=renovate/all)[39m
+[34mDEBUG[39m: getBranchPr(renovate/all)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: findPr(renovate/all, undefined, open)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Found PR #1[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: http cache: saving https://api.github.com/repos/wizardlyEinstein/minimal-reproduction/contents/renovate.json (etag=W/"08022e90b245cb417e0d54870e891b9983e860ee", lastModified=Fri, 23 May 2025 01:06:55 GMT)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Config does not need migration[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: ensureDependencyDashboard()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Closing Dependency Dashboard[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: checkReconfigureBranch()[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: No reconfigure branch found[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Removing any stale branches[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: config.repoIsOnboarded=true[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Branch lists[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "branchList": ["renovate/all"],
+       "renovateBranches": ["renovate/all"]
+[34mDEBUG[39m: remainingBranches=[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: No branches to clean up[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: PackageFiles.clear() - Package files deleted[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Branch summary[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "90c728a3ee329b7fc88623cc3359be568e899372"}],
+       "branches": [
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "90c728a3ee329b7fc88623cc3359be568e899372",
+           "branchName": "renovate/all",
+           "branchSha": "cd43ef66cd57d2aee6f061bd374018530fc439db",
+           "isModified": false,
+           "isPristine": false
+         }
+       ],
+       "defaultBranch": "main",
+       "inactiveBranches": []
+[34mDEBUG[39m: branches info extended[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "branchesInformation": [
+         {
+           "branchName": "renovate/all",
+           "prNo": 1,
+           "prTitle": "Update ghcr.io/immich-app/immich-server Docker tag to v1.133.0",
+           "result": "done",
+           "upgrades": [
+             {
+               "datasource": "docker",
+               "depName": "ghcr.io/immich-app/immich-server",
+               "displayPending": "",
+               "fixedVersion": "v1.132.3",
+               "currentVersion": "v1.132.3",
+               "currentValue": "v1.132.3",
+               "newValue": "v1.133.0",
+               "newVersion": "v1.133.0",
+               "packageFile": "kustomization.yaml",
+               "updateType": "minor",
+               "packageName": "ghcr.io/immich-app/immich-server"
+             }
+           ]
+         }
+       ]
+[34mDEBUG[39m: Renovate repository PR statistics[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "stats": {"total": 1, "open": 1, "closed": 0, "merged": 0}
+[34mDEBUG[39m: Repository result: done, status: onboarded, enabled: true, onboarded: true[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+[34mDEBUG[39m: Repository timing splits (milliseconds)[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "splits": {"init": 2769, "extract": 244, "lookup": 6194, "onboarding": 1, "update": 5966},
+       "total": 15496
+[34mDEBUG[39m: Package cache statistics[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "get": {"count": 14, "avgMs": 2, "medianMs": 1, "maxMs": 9, "totalMs": 30},
+       "set": {"count": 12, "avgMs": 22, "medianMs": 10, "maxMs": 87, "totalMs": 267}
+[34mDEBUG[39m: HTTP statistics[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "hosts": {
+         "api.github.com": {
+           "count": 12,
+           "reqAvgMs": 474,
+           "reqMedianMs": 492,
+           "reqMaxMs": 732,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         },
+         "ghcr.io": {
+           "count": 42,
+           "reqAvgMs": 171,
+           "reqMedianMs": 141,
+           "reqMaxMs": 532,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 1
+         }
+       },
+       "requests": 54
+[34mDEBUG[39m: HTTP cache statistics[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "https://api.github.com": {
+         "/repos/immich-app/immich": {"hit": 0, "miss": 1},
+         "/repos/immich-app/immich/git/trees/main": {"hit": 0, "miss": 1},
+         "/repos/wizardlyEinstein/minimal-reproduction/contents/renovate.json": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/wizardlyEinstein/minimal-reproduction/pulls": {"hit": 0, "miss": 1}
+       },
+       "https://ghcr.io": {
+         "/token": {"hit": 0, "miss": 2},
+         "/v2/immich-app/immich-machine-learning/manifests/sha256:1e0244b44273448dbccc4d7b737e566cf9478fb1556d097ff4701daa9e7c2d16": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/v2/immich-app/immich-machine-learning/manifests/v1.131.2": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/v2/immich-app/immich-server/manifests/sha256:204a2a3e7eba30a4f1480d61de2fd2dd30ca4883195bee7308d34fc7a713694c": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/v2/immich-app/immich-server/manifests/v1.133.0": {"hit": 0, "miss": 1}
+       }
+[34mDEBUG[39m: Lookup statistics[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "docker": {"count": 2, "avgMs": 4160, "medianMs": 6140, "maxMs": 6140, "totalMs": 8320}
+[34mDEBUG[39m: Cache fallback URLs[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "count": 0,
+       "hits": {}
+[32m INFO[39m: Repository finished[90m (repository=wizardlyEinstein/minimal-reproduction)[39m
+       "cloned": true,
+       "durationMs": 15496
+[34mDEBUG[39m: Checking file package cache for expired items
+[34mDEBUG[39m: Deleted 0 of 12 file cached entries in 28ms
